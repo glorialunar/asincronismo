@@ -21,8 +21,8 @@ function date() {
 date();
 
 // Usando setTimeout con callback
-function date(callback) {
-    console.log("Primer console.log", new Date);
+function date1(callback) {
+    console.log("Primer console.log (2do ejemplo)", new Date);
     setTimeout(function (){
         let date = new Date;
         callback(date);
@@ -30,8 +30,8 @@ function date(callback) {
 }
 
 function printDate (dateNow) {
-    console.log("Segundo console.log", dateNow);
+    console.log("Segundo console.log (2do ejemplo)", dateNow);
 }
 
-date(printDate);
+date1(printDate);
 
